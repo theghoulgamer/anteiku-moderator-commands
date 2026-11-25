@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AnTeiku | Moderator Command Guide</title>
+<style>
+:root{--bg:#100d0d;--panel:#1c1717;--panel2:#241c1b;--text:#f5eee8;--muted:#c1b2a7;--accent:#d49a68;--line:#49372e;--gold:#f0c28e}
+*{box-sizing:border-box}
+body{margin:0;background:radial-gradient(ellipse at top,#35231c 0,#100d0d 55%);color:var(--text);font:16px/1.6 system-ui,-apple-system,Segoe UI,sans-serif}
+.wrap{max-width:920px;margin:auto;padding:36px 20px 64px}
+header{text-align:center;padding:38px 20px 30px}
+.kicker{color:var(--accent);letter-spacing:.18em;text-transform:uppercase;font-size:.78rem;font-weight:700}
+h1{font-size:clamp(2rem,6vw,3.5rem);line-height:1.1;margin:12px 0;color:#fff2e5}
+.sub{color:var(--muted);max-width:650px;margin:12px auto}
+.notice{border:1px solid var(--line);background:#261b18;border-radius:14px;padding:14px 16px;color:#e8d3c1;margin:20px 0 28px}
+nav{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin:22px 0}
+nav a{color:var(--gold);text-decoration:none;border:1px solid var(--line);background:#1b1514;padding:7px 12px;border-radius:999px;font-size:.9rem}
+section{margin:26px 0}
+h2{font-size:1.35rem;color:var(--gold);margin:0 0 12px}
+.card{background:linear-gradient(145deg,var(--panel),#171212);border:1px solid var(--line);border-radius:16px;padding:18px;margin:10px 0}
+.command{display:flex;gap:14px;align-items:flex-start;justify-content:space-between;flex-wrap:wrap}
+.command strong{font-size:1.05rem;color:#fff2e5}
+code{display:inline-block;background:#0e0b0b;border:1px solid #44332b;border-radius:7px;padding:3px 7px;color:#f3c89c;margin:4px 4px 2px 0;overflow-wrap:anywhere}
+p{margin:8px 0;color:var(--muted)}
+.small{font-size:.88rem;color:#a99a90}
+footer{text-align:center;color:var(--muted);margin-top:42px;border-top:1px solid var(--line);padding-top:22px}
+</style>
+</head>
+<body><main class="wrap">
+<header>
+<div class="kicker">AnTeiku • Staff access guide</div>
+<h1>🛡️ Moderator Commands</h1>
+<p class="sub">A quick reference for AnTeiku moderators. Use these commands responsibly and follow the channel's moderation guidelines.</p>
+</header>
+<div class="notice"><strong>Moderator reference:</strong> This page lists commands found in the supplied Streamer.bot export. The export marks these command entries as disabled, so check with the broadcaster before relying on any command being active. Command permissions and required arguments are not specified in the export.</div>
+<nav>
+<a href="#shoutouts">Shoutouts</a><a href="#loyalty">Loyalty Points</a><a href="#raffle">Raffle</a><a href="#viewer">Viewer Shoutouts</a>
+</nav>
+<section id="shoutouts"><h2>📣 Better Shoutouts</h2>
+<div class="card"><div class="command"><strong>Shoutout</strong></div><p>Runs the Better Shoutouts command.</p><code>!so</code><code>!shoutout</code></div>
+</section>
+<section id="loyalty"><h2>💰 Loyalty Points Management</h2>
+<div class="card"><strong>Add points to present viewers</strong><p>Add points to viewers currently present in chat.</p><code>!addToAllPresent</code><code>!addPointsToAllPresent</code><code>!addPointsToPresent</code><code>!addToViewers</code><code>!addPointsToViewers</code></div>
+<div class="card"><strong>Add points to all users</strong><p>Add points across all users in the loyalty system.</p><code>!addToAllUsers</code><code>!addPointsToAllUsers</code></div>
+<div class="card"><strong>Add points to one user</strong><p>Add loyalty points to a specified user.</p><code>!addPoints</code><code>!pointsAdd</code></div>
+<div class="card"><strong>Collect taxes</strong><p>Runs the loyalty points tax collection action.</p><code>!collectTaxes</code><code>!taxesCollect</code><code>!taxCollection</code></div>
+<div class="card"><strong>Enable Happy Hour</strong><p>Enables the loyalty points Happy Hour action.</p><code>!pointsHappyHour</code></div>
+<div class="card"><strong>Remove points from one user</strong><p>Remove loyalty points from a specified user.</p><code>!removePoints</code><code>!pointsRemove</code></div>
+<div class="card"><strong>Multiply all users' points</strong><p>Runs the points multiplier action for all users.</p><code>!multiplyAllUsersPoints</code></div>
+<div class="card"><strong>Start Rumble</strong><p>Starts the loyalty points Rumble action.</p><code>!rumble</code></div>
+<div class="card"><strong>Transfer points</strong><p>Runs the loyalty points transfer action.</p><code>!givePoints</code><code>!pointsGive</code><code>!transferPoints</code><code>!pointsTransfer</code></div>
+</section>
+<section id="raffle"><h2>🎟️ Raffle Management</h2>
+<div class="card"><strong>Force-end raffle</strong><p>Runs the raffle force-end command.</p><code>!raffleend</code></div>
+<div class="card"><strong>Start raffle</strong><p>Runs the raffle V2 command.</p><code>!raffle</code></div>
+</section>
+<section id="viewer"><h2>👥 Viewer Shoutout Commands</h2>
+<p>These are named shoutout commands from the export. The export doesn't include descriptions of their individual actions.</p>
+<div class="card"><strong>Zard</strong><p><code>!zard</code></p></div>
+<div class="card"><strong>Bee</strong><p><code>!bee</code></p></div>
+<div class="card"><strong>Doorkey</strong><p><code>!doorkey</code></p></div>
+<div class="card"><strong>Geek</strong><p><code>!geek</code></p></div>
+<div class="card"><strong>Maiden</strong><p><code>!maiden</code></p></div>
+<div class="card"><strong>Viixx</strong><p><code>!viixx</code><code>!vix</code><code>!viix</code></p></div>
+</section>
+<footer>☕ AnTeiku Moderator Guide • Keep the café welcoming.</footer>
+</main></body></html>
